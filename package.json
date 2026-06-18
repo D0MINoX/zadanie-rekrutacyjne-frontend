@@ -13,8 +13,10 @@
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache"
   },
-  "dependencies": {
-    "vue": "^3.5.38"
+ "dependencies": {
+    "vue": "^3.5.38",
+    "vue-chartjs": "^5.3.1",
+    "chart.js": "^4.4.3"
   },
   "devDependencies": {
     "@tsconfig/node24": "^24.0.4",
