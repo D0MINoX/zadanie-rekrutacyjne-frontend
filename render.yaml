@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: zadanie-frontend
+    env: node
+    region: frankfurt
+    plan: free
+    
+    # Build command
+    buildCommand: npm install && npm run build
+    
+    # Start command
+    startCommand: npm run preview
+    
+    # Environment variables
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: VITE_API_URL
+        value: https://zadanie-rekrutacyjne-backend.onrender.com
+    
+    # Health check
+    healthCheckPath: /
