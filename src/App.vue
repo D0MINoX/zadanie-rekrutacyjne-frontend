@@ -43,7 +43,7 @@ async function getMix() {
   try {
     loading.value = true;
     error.value = null;
-    const response = await fetch('https://localhost:7189/api/energy/miks');
+    const response = await fetch('https://zadanie-rekrutacyjne-backend.onrender.com/api/energy/miks');
     if (!response.ok) throw new Error(`Błąd miksu: ${response.status}`);
     days.value = await response.json();
   } catch (error: any) {
@@ -57,7 +57,7 @@ async function getMix() {
 async function getOptimalWindow() {
   try {
     WindowLoading.value = true;
-    const response = await fetch(`https://localhost:7189/api/energy/CleanWindow/${pickedHours.value}`);
+    const response = await fetch(`https://zadanie-rekrutacyjne-backend.onrender.com/api/energy/CleanWindow/${pickedHours.value}`);
     if (!response.ok) throw new Error(`Błąd optymalizacji: ${response.status}`);
     optimalWindow.value = await response.json();
   } catch (error) {
