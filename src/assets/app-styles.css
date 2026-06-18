@@ -1,0 +1,74 @@
+.app-kontener {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tytul-glowny, .procent-wielki {
+  color: #3aa374;
+}
+
+.btn-akcent {
+  background-color: #42b883;
+  border: none;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+  .btn-akcent:hover {
+    background-color: #3aa374;
+  }
+
+.tytul-sekcji {
+  font-size: 1.4rem;
+  border-left: 4px solid #35495e;
+  padding-left: 12px;
+  color: #212529;
+}
+
+.eko-badge {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+  font-weight: 700;
+  border: 1px solid #c8e6c9;
+}
+
+.wspolna-legenda-sekcja h4 {
+  font-size: 0.8rem;
+  letter-spacing: 0.05rem;
+}
+
+.sekcja-optymalizacji {
+  border-top: 4px solid #42b883 !important;
+}
+
+.suwak {
+  accent-color: #42b883;
+}
+
+.pasek-progres {
+  background-color: #42b883;
+}
+
+.kolor-box {
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.nazwa-paliwa-legenda {
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.chart-container-box {
+  min-width: 0;
+  max-width: 155px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991.98px) {
+  .layout-row {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
